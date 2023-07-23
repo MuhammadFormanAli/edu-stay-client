@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
 
-const CollegeCard = () => {
+const CollegeCard = ({college}) => {
+    console.log(' from college card', college)
+    
     return (
         <div className="card bg-base-100 shadow-xl">
-            <figure><img src="/college.jpg" alt="" /></figure>
+            <figure><img src={college?.collegeImg} alt="" /></figure>
             <div className="card-body">
-                <h2 className="card-title">College Name : Sirajganj College</h2>
-                <p>Admission Deadline:12.12.2012</p>
-                <p>Events : yoga Class, Cooking Classes </p>
-                <p>Total Reachers Papers : 15</p>
-                <p>Sports : Football, Cricket</p>
+                <h2 className="card-title">College Name : {college?.collegeName}</h2>
+                <p>Admission Deadline:{college?.admissionDate}</p>
+                <p>Events : {college?.events?.map((event,index) => <span key={index}>{event.eventName},</span>)} </p>
+                <p>Total Reachers Papers : {college?.totalResearchPapers}</p>
+                <p>Events : {college?.sportsCategories?.map((sport,index) => <span key={index}>{sport.categoryName},</span>)} </p>
                 <div className="card-actions justify-end">
-                    <Link to='/details' className="btn btn-primary">Details</Link>
+                    <Link to={`/college/${college?._id}`} className="btn btn-primary">Details</Link>
                 </div>
             </div>
         </div>

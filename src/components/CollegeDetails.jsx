@@ -1,24 +1,23 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 
 const CollegeDetails = () => {
-    const [colleges, setColleges] = useState([])
+    const [college, setCollege] = useState({})
+    const {id} = useParams()
+    console.log(id)
 
     useEffect(() => {
-        fetch('/college.json')
+        fetch(`http://localhost:5000/college/${id}`)
             .then(res => res.json())
-            .then(data => setColleges(data))
+            .then(data => setCollege(data))
 
-    }, [])
+    }, [id])
 
-    console.log(colleges[0])
+    console.log(college)
     return (
         <div>
-            {
-                colleges?.map(college => <section
-                    key={college.collegeId}
-                    className=""
-                >
+           
                     <div className="p-2">
                         <img className=" md:h-[400px] w-full" src={college?.collegeImg} alt="" />
                         <h1 className="font-bold text-lg mt-1">College Name : {college?.collegeName}</h1>
@@ -81,8 +80,7 @@ const CollegeDetails = () => {
 
 
                     </div>
-                </section>)
-            }
+                
         </div>
     );
 };
