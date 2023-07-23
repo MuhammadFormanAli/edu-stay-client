@@ -1,0 +1,63 @@
+[
+    {
+        "collegeId": 144312,
+        "collegeName": "ABC College",
+        "collegeRatting": 4.5,
+        "collegeImg": "/college.jpg",
+        "collegeAddress": "123 Main Street, Cityville, State",
+        "collegeDescription": "ABC College is a prestigious institution known for its academic excellence and vibrant campus life.",
+        "admissionDate": "November 20th - November 22nd",
+        "admissionProcess":[
+            "Choose the programs you wish to apply for.",
+            "Pay the application fee.",
+            "Upload the required application documents.",
+            "After submission, China Admissions will review your application within 2-3 days and proceed to the university or request further clarification if needed.",
+            "Once the application has been processed to the university, you will receive a unique application ID from each university.",
+            "The university may directly contact you for additional questions or information.",
+            "China Admissions will follow up with the university every week to get updates on your application. Any updates will be promptly communicated to you.",
+            "If you decide to withdraw your application or make changes to your address or plans, please inform China Admissions.",
+            "After being accepted, you will receive your admissions letter electronically and will be asked to pay the non-refundable deposit to the university.",
+            "Once you have paid the deposit, the university will issue your admissions letter and visa form for your home country."
+          ],
+        "events": [
+            {
+                "eventName": "Annual Fest",
+                "eventDate": "November 20th - November 22nd",
+                "eventDescription": "The college organizes a grand annual fest with cultural performances, music, dance, and food stalls."
+                
+            },
+            {
+                "eventName": "Tech Symposium",
+                "eventDate": "April 5th - April 7th",
+                "eventDescription": "A technical symposium showcasing innovative projects and research in the field of technology."
+            }
+        ],
+        "researchWorks": [
+            {
+                "researchTitle": "Advancements in Renewable Energy",
+                "researchDescription": "A team of researchers at ABC College developed new solar panel technology that increases energy conversion efficiency by 30%."
+                
+            },
+            {
+                "researchTitle": "Cancer Treatment Breakthrough",
+                "researchDescription": "The college's medical research team made significant progress in developing a novel cancer treatment."
+            
+            }
+        ],
+        "sportsCategories": [
+            {
+                "categoryName": "Basketball",
+                "categoryDescription": "The college has a competitive basketball team that participates in local and regional tournaments."
+            },
+            {
+                "categoryName": "Swimming",
+                "categoryDescription": "Swimming is a popular sport at ABC College, and the college has a well-equipped swimming pool."
+            },
+            {
+                "categoryName": "Football",
+                "categoryDescription": "The college football team has won several championships in intercollegiate competitions."
+            }
+        ]
+    
+    }
+]
