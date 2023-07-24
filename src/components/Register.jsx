@@ -8,9 +8,10 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { BiHide, BiShow } from 'react-icons/bi';
 import useAuth from '../hooks/useAuth';
+import SocialLogin from './SocialLogin';
 
 const Register = () => {
-    const { createUser } = useAuth()
+    const { createUser, manageUser } = useAuth()
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
@@ -24,13 +25,34 @@ const Register = () => {
 
     const onSubmit = data => {
         const { name, email, password, photo: photo } = data
-
+        const saveUser = { name, email, photo };
 
         createUser(email, password)
-            .then(result => {
-                Swal.fire('SighUp successful')
-                navigate(from, { replace: true })
-                console.log(result)
+            .then(() => {
+                manageUser(name, photo)
+                    .then((result) => {
+
+                        fetch('http://localhost:5000/users', {
+                            method: 'POST',
+                            headers: {
+                                'content-type': 'application/json'
+                            },
+                            body: JSON.stringify(saveUser)
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                console.log(data);
+                                if (data.insertedId) {
+                                    console.log('Successful');
+                                }
+                            })
+
+                        console.log(result)
+                        Swal.fire('SighUp successful')
+                        navigate(from, { replace: true })
+
+                    })
+                    .catch(error => setError(error.message))
 
             })
             .catch(error => {
@@ -129,6 +151,7 @@ const Register = () => {
                     <p>Already have an account <Link to="/login" className='text-blue-700 underline'>Login</Link></p>
                 </div>
             </form>
+            <SocialLogin></SocialLogin>
             <small className='text-red-600 text-center block m-1'>{error}</small>
 
         </div>

@@ -66,7 +66,7 @@ const Navbar = () => {
 
 						<div className="w-[35px] rounded-full ring ring-slate-600 ring-offset-base-100 ring-offset-2">
 
-							<img src={user ? `${user?.photoURL}` : '/avatar.jpg'} />
+							<Link to='/profile'><img src={user ? `${user?.photoURL}` : '/avatar.jpg'} /></Link>
 
 						</div>
 

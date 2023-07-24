@@ -22,7 +22,7 @@ const Admission = () => {
            colleges?.map(college => <div
            key={college._Id}
            >
-            <Link to='/apply' >
+            <Link to={`/college/admission/${college?._id}`}  >
                 <div className="w-[250px] text-center border p-6 ">
                     <img className="w-full rounded" src={college?.collegeImg} alt="" />
                     <h1>{college?.collegeName}</h1>

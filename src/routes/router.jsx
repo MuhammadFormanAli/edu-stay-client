@@ -7,6 +7,10 @@ import Colleges from "../components/Colleges";
 import Admission from "../components/Admission";
 import Apply from "../components/Apply";
 import CollegeDetails from "../components/CollegeDetails";
+import MyCollege from "../components/MyCollege";
+import ReviewForm from "../components/ReviewForm";
+import ProfileCard from "../components/ProfileCard";
+import EditProfile from "../components/EditProfile";
 
 
 
@@ -40,8 +44,24 @@ const router = createBrowserRouter([
               element:<Admission></Admission>
             },
             {
-              path:"apply",
+              path:"college/admission/:id",
               element:<Apply></Apply>
+            },
+            {
+              path:"my-colleges",
+              element:<MyCollege></MyCollege>
+            },
+            {
+              path:"review/:collegeName",
+              element:<ReviewForm></ReviewForm>
+            },
+            {
+              path:"profile",
+              element:<ProfileCard></ProfileCard>
+            },
+            {
+              path:"editProfile",
+              element:<EditProfile></EditProfile>
             },
     
           ]

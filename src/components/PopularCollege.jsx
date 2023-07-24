@@ -13,7 +13,7 @@ const PopularCollege = () => {
     },[])
 
   
-console.log(colleges)
+// console.log(colleges)
     return (
         <div className="border m-1 p-4">
              <h1 className="font-bold text-center text-2xl my-5">Popular Colleges</h1>

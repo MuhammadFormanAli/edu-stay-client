@@ -1,7 +1,7 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { Controller, useForm } from "react-hook-form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -11,17 +11,44 @@ const Apply = () => {
     const location = useLocation()
     const from = location.state?.from?.pathname || '/'
 
+    const [college, setCollege] = useState({})
+    const {id} = useParams()
+    console.log(id)
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/college/${id}`)
+            .then(res => res.json())
+            .then(data => setCollege(data))
+
+    }, [id])
+
     const [error, setError] = useState('')
 
     const { register, control, handleSubmit, formState: { errors }, reset } = useForm();
 
-
+   
 
 
     const onSubmit = data => {
-        const { subject, name, email,  photo: photo } = data
+        const { subject, name, email, photo,phone,address,dateOfBirth } = data
+        const application = { name, subject, photo, email,phone,address,dateOfBirth,college };
 
-        console.log(name, email, photo, subject)
+        fetch('http://localhost:5000/application', {
+            method: 'POST',
+            headers: {
+              'content-type': 'application/json'
+            },
+            body: JSON.stringify(application)
+          })
+            .then(res => res.json())
+            .then(data => {
+              console.log(data);
+              if (data.insertedId) {
+                alert('Application successful');
+              }
+            })
+
+        
         reset()
         navigate(from, { replace: true })
         setError('')
@@ -33,14 +60,6 @@ const Apply = () => {
         <div className='mb-4 w-full lg:w-1/2 mx-auto bg-base-300 p-4 my-4 rounded-md'>
             <h1 className='text-3xl text-center font-bold my-4'>Apply</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-
-                {/* { ‘Candidate Name, Subject, Candidate Email, Candidate
-                     Phone number, address, date of birth, and image field. And submit button. } */}
-
-
-
-
-
 
                 <div>
                     <label htmlFor="name" className="block mb-2 font-medium text-gray-700">Name</label>
@@ -57,7 +76,7 @@ const Apply = () => {
                 <Controller
                     name="subject"
                     control={control}
-                    rules={{ required: 'This field is required' }} // Set validation rules if needed
+                    rules={{ required: 'This field is required' }}
                     render={({ field }) => (
                         <select
                         id="subject"
@@ -73,7 +92,7 @@ const Apply = () => {
 
                 <div>
                     <label htmlFor="email" className="block mb-2 font-medium text-gray-700">Email</label>
-                    <input id="email" defaultValue={user?.email} type="email" {...register('email',  { required: true, pattern: /^\S+@\S+$/i })}
+                    <input id="email" readOnly defaultValue={user?.email} type="email" {...register('email',  { required: true, pattern: /^\S+@\S+$/i })}
                         className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"
                     />
                     {errors.email && (
