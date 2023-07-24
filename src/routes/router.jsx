@@ -11,6 +11,9 @@ import MyCollege from "../components/MyCollege";
 import ReviewForm from "../components/ReviewForm";
 import ProfileCard from "../components/ProfileCard";
 import EditProfile from "../components/EditProfile";
+import PrivetRoute from "./PrivateRoute";
+import Error from "../components/Error";
+import PasswordResetForm from "../components/PasswordResetForm";
 
 
 
@@ -18,6 +21,7 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+        errorElement:<Error></Error>,
         children:[
             {
               path:"/",
@@ -25,7 +29,7 @@ const router = createBrowserRouter([
             },
             {
               path:"college/:id",
-              element:<CollegeDetails></CollegeDetails>
+              element: <PrivetRoute><CollegeDetails></CollegeDetails></PrivetRoute>
             },
             {
               path:"register",
@@ -41,27 +45,31 @@ const router = createBrowserRouter([
             },
             {
               path:"admission",
-              element:<Admission></Admission>
+              element:<PrivetRoute><Admission></Admission></PrivetRoute>
             },
             {
               path:"college/admission/:id",
-              element:<Apply></Apply>
+              element:<PrivetRoute><Apply></Apply></PrivetRoute>
             },
             {
               path:"my-colleges",
-              element:<MyCollege></MyCollege>
+              element:<PrivetRoute><MyCollege></MyCollege></PrivetRoute>
             },
             {
               path:"review/:collegeName",
-              element:<ReviewForm></ReviewForm>
+              element:<PrivetRoute><ReviewForm></ReviewForm> </PrivetRoute>
             },
             {
               path:"profile",
-              element:<ProfileCard></ProfileCard>
+              element:<PrivetRoute><ProfileCard></ProfileCard> </PrivetRoute>
             },
             {
               path:"editProfile",
-              element:<EditProfile></EditProfile>
+              element: <PrivetRoute><EditProfile></EditProfile></PrivetRoute>
+            },
+            {
+              path:"passwordReset",
+              element: <PasswordResetForm></PasswordResetForm>
             },
     
           ]

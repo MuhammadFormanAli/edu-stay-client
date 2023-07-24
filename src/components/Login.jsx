@@ -102,8 +102,9 @@ const Login = () => {
                     <p>Do not have an account <Link to="/register" className='text-blue-700 underline'>Register</Link></p>
                 </div>
             </form>
+                <Link to='/passwordReset' className=" font-medium text-indigo-600 hover:text-indigo-500 ">Forgot your password?</Link>
 
-            <div>
+            <div className='my-2'>
                 <SocialLogin></SocialLogin>
             </div>
         </div>

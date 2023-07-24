@@ -6,7 +6,7 @@ import useAuth from "../hooks/useAuth";
 
 const Navbar = () => {
 	const { logOut, user, loading } = useAuth()
-	if(loading){
+	if (loading) {
 		return <div>Loading</div>
 	}
 	console.log(user)
@@ -16,7 +16,7 @@ const Navbar = () => {
 			console.log(result)
 			Swal.fire('Log out successful')
 		})
-		.catch(error => console.log(error))
+			.catch(error => console.log(error))
 	}
 
 
@@ -45,10 +45,12 @@ const Navbar = () => {
 						</ul>
 					</div>
 
+
+
 					<Link to='/'><img className="w-[50px] hidden sm:block " src="/logo.png" alt="" /></Link>
 
 					<div className="ml-5">
-						
+
 					</div>
 				</div>
 
@@ -62,9 +64,16 @@ const Navbar = () => {
 
 				<div className="navbar-end">
 
+						<div className="mx-2">
+						{
+							user ? <Link to='/profile'> {user?.displayName}</Link> : ''
+						}
+						</div>
 					<div className="avatar mr-4">
 
 						<div className="w-[35px] rounded-full ring ring-slate-600 ring-offset-base-100 ring-offset-2">
+
+
 
 							<Link to='/profile'><img src={user ? `${user?.photoURL}` : '/avatar.jpg'} /></Link>
 
