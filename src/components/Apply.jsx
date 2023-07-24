@@ -16,7 +16,7 @@ const Apply = () => {
     console.log(id)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/college/${id}`)
+        fetch(`https://edu-stay-server.vercel.app/college/${id}`)
             .then(res => res.json())
             .then(data => setCollege(data))
 
@@ -33,7 +33,7 @@ const Apply = () => {
         const { subject, name, email, photo,phone,address,dateOfBirth } = data
         const application = { name, subject, photo, email,phone,address,dateOfBirth,college };
 
-        fetch('http://localhost:5000/application', {
+        fetch('https://edu-stay-server.vercel.app/application', {
             method: 'POST',
             headers: {
               'content-type': 'application/json'

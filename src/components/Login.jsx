@@ -12,6 +12,8 @@ const Login = () => {
     const navigate = useNavigate()
     const location = useLocation()
 
+    const [errorMessage, setErrorMessage] = useState('')
+
     const from = location.state?.from?.pathname || '/'
     console.log(location)
 
@@ -31,7 +33,7 @@ const Login = () => {
             
         })
         .catch(error=>{
-            console.log(error.message)
+            setErrorMessage(error.message)
         })
         
         reset()
@@ -103,7 +105,12 @@ const Login = () => {
                 </div>
             </form>
                 <Link to='/passwordReset' className=" font-medium text-indigo-600 hover:text-indigo-500 ">Forgot your password?</Link>
-
+<div>
+    
+    {
+    errorMessage && <small className='text-red-500'>{errorMessage}</small>
+    }
+</div>
             <div className='my-2'>
                 <SocialLogin></SocialLogin>
             </div>

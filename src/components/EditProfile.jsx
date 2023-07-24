@@ -15,7 +15,7 @@ const EditProfile = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users?email=${user?.email}`)
+        fetch(`https://edu-stay-server.vercel.app/users?email=${user?.email}`)
             .then(res => res.json())
             .then(result => setEduUser(result))
     }, [])
@@ -37,7 +37,7 @@ const EditProfile = () => {
             manageUser(name, photo).then(() => {
                 console.log('name updated')
 
-                fetch(`http://localhost:5000/users/${eduUser?._id}`, {
+                fetch(`https://edu-stay-server.vercel.app/users/${eduUser?._id}`, {
                     method: 'PUT',
                     headers: {
                         'content-type': 'application/json'

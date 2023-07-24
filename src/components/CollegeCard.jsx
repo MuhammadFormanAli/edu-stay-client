@@ -12,12 +12,12 @@ const CollegeCard = ({college}) => {
                 <h2 className="card-title">College Name : {college?.collegeName}</h2>
                 <p>Admission Deadline:{college?.admissionDate}</p>
                 <p>Events : {college?.events?.map((event,index) => <span key={index}>{event.eventName},</span>)} </p>
-                <p>Total Reachers Papers : {college?.totalResearchPapers}</p>
+                <p>Total Reachers Papers : {college?.researchPapers}</p>
                 <p>Events : {college?.sportsCategories?.map((sport,index) => <span key={index}>{sport.categoryName},</span>)} </p>
                 
                 <p className='text-yellow-700'>Rating:<Rating className='text-yellow-500'
 
-                                placeholderRating={college?.collegeRatting}
+                                placeholderRating={college?.collegeRating}
                                 readonly
                                 emptySymbol={<FaRegStar />}
                                 placeholderSymbol={<FaStar />}

@@ -10,7 +10,7 @@ const CollegeDetails = () => {
     console.log(id)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/college/${id}`)
+        fetch(`https://edu-stay-server.vercel.app/college/${id}`)
             .then(res => res.json())
             .then(data => setCollege(data))
 
@@ -26,10 +26,11 @@ const CollegeDetails = () => {
                 <h1 className="mt-1"><span className="font-bold">Address</span> : {college?.collegeAddress}</h1>
                 <h1 className="mt-1"> <span className="font-bold">About College</span> : {college?.collegeDescription}</h1>
                 <h1 className="mt-1"> <span className="font-bold">Admission Date</span>  : {college?.admissionDate}</h1>
+                <h1 className="mt-1"> <span className="font-bold">Total Research Paper</span>  : {college?.researchPapers}</h1>
 
                 <p className='text-yellow-700'>Rating:<Rating className='text-yellow-500'
 
-                    placeholderRating={college?.collegeRatting}
+                    placeholderRating={college?.collegeRating}
                     readonly
                     emptySymbol={<FaRegStar />}
                     placeholderSymbol={<FaStar />}

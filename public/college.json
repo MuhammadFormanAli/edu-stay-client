@@ -1,63 +1,387 @@
 [
-    {
-        "collegeId": 144312,
-        "collegeName": "ABC College",
-        "collegeRatting": 4.5,
-        "collegeImg": "/college.jpg",
-        "collegeAddress": "123 Main Street, Cityville, State",
-        "collegeDescription": "ABC College is a prestigious institution known for its academic excellence and vibrant campus life.",
-        "admissionDate": "November 20th - November 22nd",
-        "admissionProcess":[
-            "Choose the programs you wish to apply for.",
-            "Pay the application fee.",
-            "Upload the required application documents.",
-            "After submission, China Admissions will review your application within 2-3 days and proceed to the university or request further clarification if needed.",
-            "Once the application has been processed to the university, you will receive a unique application ID from each university.",
-            "The university may directly contact you for additional questions or information.",
-            "China Admissions will follow up with the university every week to get updates on your application. Any updates will be promptly communicated to you.",
-            "If you decide to withdraw your application or make changes to your address or plans, please inform China Admissions.",
-            "After being accepted, you will receive your admissions letter electronically and will be asked to pay the non-refundable deposit to the university.",
-            "Once you have paid the deposit, the university will issue your admissions letter and visa form for your home country."
-          ],
-        "events": [
-            {
-                "eventName": "Annual Fest",
-                "eventDate": "November 20th - November 22nd",
-                "eventDescription": "The college organizes a grand annual fest with cultural performances, music, dance, and food stalls."
-                
-            },
-            {
-                "eventName": "Tech Symposium",
-                "eventDate": "April 5th - April 7th",
-                "eventDescription": "A technical symposium showcasing innovative projects and research in the field of technology."
-            }
-        ],
-        "researchWorks": [
-            {
-                "researchTitle": "Advancements in Renewable Energy",
-                "researchDescription": "A team of researchers at ABC College developed new solar panel technology that increases energy conversion efficiency by 30%."
-                
-            },
-            {
-                "researchTitle": "Cancer Treatment Breakthrough",
-                "researchDescription": "The college's medical research team made significant progress in developing a novel cancer treatment."
-            
-            }
-        ],
-        "sportsCategories": [
-            {
-                "categoryName": "Basketball",
-                "categoryDescription": "The college has a competitive basketball team that participates in local and regional tournaments."
-            },
-            {
-                "categoryName": "Swimming",
-                "categoryDescription": "Swimming is a popular sport at ABC College, and the college has a well-equipped swimming pool."
-            },
-            {
-                "categoryName": "Football",
-                "categoryDescription": "The college football team has won several championships in intercollegiate competitions."
-            }
-        ]
-    
-    }
+  {
+    "collegeName": "University of Tokyo",
+    "collegeRating": 4.5,
+    "researchPapers": 25,
+    "collegeImg": "https://media.istockphoto.com/id/619050220/photo/the-university-of-tokyos-main-auditorium.jpg?s=612x612&w=0&k=20&c=-I29SzXnBiNya1ZTis9Tv__DE1_HfOrhqyomOUCo60Q=",
+    "collegeAddress": "123 Main Street, Cityville, State",
+    "collegeDescription": "University of Tokyo is a prestigious institution known for its academic excellence and vibrant campus life.",
+    "admissionDate": "November 20th - November 22nd",
+    "admissionProcess": [
+      "Choose the programs you wish to apply for.",
+      "Pay the application fee.",
+      "Upload the required application documents.",
+      "After submission, the university will review your application within 2-3 days and proceed to request further clarification if needed.",
+      "Once the application has been processed, you will receive a unique application ID from the university.",
+      "The university may directly contact you for additional questions or information.",
+      "The university will follow up with you regularly to get updates on your application.",
+      "If you decide to withdraw your application or make changes to your plans, please inform the university.",
+      "After being accepted, you will receive your admissions letter electronically and will be asked to pay the non-refundable deposit.",
+      "Once you have paid the deposit, the university will issue your admissions letter and visa form for your home country."
+    ],
+    "events": [
+      {
+        "eventName": "Annual Fest",
+        "eventDate": "November 20th - November 22nd",
+        "eventDescription": "University of Tokyo organizes a grand annual fest with cultural performances, music, dance, and food stalls."
+      },
+      {
+        "eventName": "Tech Symposium",
+        "eventDate": "April 5th - April 7th",
+        "eventDescription": "A technical symposium showcasing innovative projects and research in the field of technology."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Advancements in Renewable Energy",
+        "researchDescription": "A team of researchers at University of Tokyo developed new solar panel technology that increases energy conversion efficiency by 30%."
+      },
+      {
+        "researchTitle": "Cancer Treatment Breakthrough",
+        "researchDescription": "The college's medical research team made significant progress in developing a novel cancer treatment."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Basketball",
+        "categoryDescription": "University of Tokyo has a competitive basketball team that participates in local and regional tournaments."
+      },
+      {
+        "categoryName": "Swimming",
+        "categoryDescription": "Swimming is a popular sport at University of Tokyo, and the college has a well-equipped swimming pool."
+      },
+      {
+        "categoryName": "Football",
+        "categoryDescription": "The college football team has won several championships in intercollegiate competitions."
+      }
+    ]
+  },
+  {
+    "collegeName": "Harvard University",
+    "collegeRating": 4.8,
+    "researchPapers": 127,
+    "collegeImg": "https://www.sdamustang.com/wp-content/uploads/2022/09/0x0-900x520.jpg",
+    "collegeAddress": "456 Elm Street, Townsville, State",
+    "collegeDescription": "Harvard University is a world-renowned institution known for its academic excellence and rich history.",
+    "admissionDate": "December 1st - December 15th",
+    "admissionProcess": [
+      "Select the programs you wish to apply for.",
+      "Pay the application fee.",
+      "Submit the required application documents.",
+      "After submission, the university will review your application within 1-2 weeks and may request additional information if needed.",
+      "Once the application has been reviewed, you will receive a notification about the admission decision.",
+      "The university may contact you for interviews or further evaluation.",
+      "If accepted, you will receive your official acceptance letter and further instructions for enrollment.",
+      "Upon acceptance, you will be required to submit a non-refundable enrollment deposit.",
+      "Harvard University will provide support for the visa application process, if necessary.",
+      "Welcome to Harvard University!"
+    ],
+    "events": [
+      {
+        "eventName": "Harvard Yard Fest",
+        "eventDate": "September 15th",
+        "eventDescription": "Harvard University hosts a lively event to welcome new students and showcase various campus organizations and activities."
+      },
+      {
+        "eventName": "Ivy League Sports Day",
+        "eventDate": "March 25th",
+        "eventDescription": "An annual sports day where Ivy League colleges compete in various sports events."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Breakthroughs in Artificial Intelligence",
+        "researchDescription": "Harvard researchers have made significant advancements in the field of AI, developing algorithms that mimic human learning capabilities."
+      },
+      {
+        "researchTitle": "Genome Editing Innovation",
+        "researchDescription": "The college's genetic research team has achieved groundbreaking results in genome editing technology."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Rowing",
+        "categoryDescription": "Harvard University boasts a strong rowing team that competes in prestigious regattas."
+      },
+      {
+        "categoryName": "Lacrosse",
+        "categoryDescription": "Lacrosse is a popular sport at Harvard University, with competitive teams for both men and women."
+      },
+      {
+        "categoryName": "Tennis",
+        "categoryDescription": "The college tennis teams have a successful track record in intercollegiate competitions."
+      }
+    ]
+  },
+  {
+    "collegeName": "Stanford University",
+    "collegeRating": 4.7,
+    "researchPapers": 40,
+    "collegeImg": "https://scpd.stanford.edu/sites/default/files/2020-08/stanford-oval.jpg",
+    "collegeAddress": "789 Oak Avenue, Villageland, State",
+    "collegeDescription": "Stanford University is a leading institution known for its cutting-edge research and diverse campus community.",
+    "admissionDate": "October 1st - October 30th",
+    "admissionProcess": [
+      "Choose the programs you wish to apply for.",
+      "Submit your application online.",
+      "Pay the application fee.",
+      "Upload the required documents.",
+      "The university will review your application and make admission decisions by the end of November.",
+      "If admitted, you will receive an official acceptance letter.",
+      "Stanford University provides comprehensive support for international students, including visa assistance.",
+      "Congratulations on your acceptance to Stanford!"
+    ],
+    "events": [
+      {
+        "eventName": "Cardinal Nights",
+        "eventDate": "Every Friday",
+        "eventDescription": "Stanford hosts Cardinal Nights, offering a variety of late-night events and activities for students to unwind and have fun."
+      },
+      {
+        "eventName": "Innovation Fair",
+        "eventDate": "February 10th - February 12th",
+        "eventDescription": "A three-day innovation fair showcasing projects and startups developed by students and alumni."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Advancements in Artificial Intelligence",
+        "researchDescription": "Stanford researchers have made groundbreaking progress in AI, including natural language processing and computer vision."
+      },
+      {
+        "researchTitle": "Medical Breakthroughs",
+        "researchDescription": "The college's medical research team has achieved significant breakthroughs in various fields of medicine."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Track and Field",
+        "categoryDescription": "Stanford University has an exceptional track and field team, competing at the national level."
+      },
+      {
+        "categoryName": "Volleyball",
+        "categoryDescription": "Volleyball is a popular sport at Stanford University, with both intramural and varsity teams."
+      },
+      {
+        "categoryName": "Soccer",
+        "categoryDescription": "The college soccer teams have a strong presence in the Pac-12 conference."
+      }
+    ]
+  },
+  {
+    "collegeName": "Massachusetts Institute of Technology (MIT)",
+    "collegeRating": 4.9,
+    "researchPapers": 125,
+    "collegeImg": "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201704/mit-supply-chain-management-00_0.jpg?itok=8RWKirTY",
+    "collegeAddress": "101 Tech Street, Innovatown, State",
+    "collegeDescription": "Massachusetts Institute of Technology (MIT) is a world-renowned technical institute known for its cutting-edge research and innovation.",
+    "admissionDate": "September 1st - September 30th",
+    "admissionProcess": [
+      "Select the programs you wish to apply for.",
+      "Complete the online application.",
+      "Submit the required documents and test scores.",
+      "The university will conduct a holistic review of your application.",
+      "If selected, you may be invited for an interview.",
+      "The university will notify you of the admission decision by mid-December.",
+      "Congratulations on your acceptance to MIT!"
+    ],
+    "events": [
+      {
+        "eventName": "Hacking the Campus",
+        "eventDate": "November 10th - November 12th",
+        "eventDescription": "An annual hackathon where students come together to develop innovative solutions to real-world problems."
+      },
+      {
+        "eventName": "MIT Science Expo",
+        "eventDate": "March 20th - March 22nd",
+        "eventDescription": "A science exhibition featuring projects and research conducted by students from various disciplines."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Artificial Intelligence Innovations",
+        "researchDescription": "MIT researchers have contributed significantly to AI advancements, including autonomous systems and machine learning."
+      },
+      {
+        "researchTitle": "Sustainable Energy Solutions",
+        "researchDescription": "The college's engineering team has developed sustainable energy solutions that have practical applications worldwide."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Rowing",
+        "categoryDescription": "MIT has a competitive rowing team that participates in regattas and championships."
+      },
+      {
+        "categoryName": "Fencing",
+        "categoryDescription": "Fencing is a popular sport at MIT, with a strong team that competes regionally and nationally."
+      },
+      {
+        "categoryName": "Badminton",
+        "categoryDescription": "The college badminton team has earned recognition for its skill and sportsmanship."
+      }
+    ]
+  },
+  {
+    "collegeName": "California Institute of Technology (Caltech)",
+    "collegeRating": 4.8,
+    "researchPapers": 205,
+    "collegeImg": "https://www.thoughtco.com/thmb/252w_c8aFsIajuseT7swnrlSUR4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-458411541-7cc7187ad6e94a52a77b63ec40088605.jpg",
+    "collegeAddress": "222 Science Avenue, Techcity, State",
+    "collegeDescription": "California Institute of Technology (Caltech) is a world-renowned science and engineering institution with a focus on research excellence.",
+    "admissionDate": "October 15th - November 15th",
+    "admissionProcess": [
+      "Choose the programs you wish to apply for.",
+      "Complete the online application.",
+      "Submit your test scores and academic records.",
+      "The university will review your application and may request additional materials.",
+      "If shortlisted, you will be invited for an interview with faculty members.",
+      "The university will notify you of the admission decision by April 1st.",
+      "Congratulations on your acceptance to Caltech!"
+    ],
+    "events": [
+      {
+        "eventName": "Science Fair",
+        "eventDate": "February 28th - March 1st",
+        "eventDescription": "Caltech hosts an annual science fair featuring student-led projects and experiments."
+      },
+      {
+        "eventName": "Engineering Expo",
+        "eventDate": "November 15th - November 17th",
+        "eventDescription": "A showcase of engineering innovations and prototypes developed by students."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Quantum Computing Breakthroughs",
+        "researchDescription": "Caltech researchers have made significant strides in quantum computing, laying the foundation for practical quantum applications."
+      },
+      {
+        "researchTitle": "Space Exploration",
+        "researchDescription": "The college's astronomy team has contributed to groundbreaking research in space exploration and celestial phenomena."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Soccer",
+        "categoryDescription": "Caltech has a competitive soccer team that participates in intercollegiate competitions."
+      },
+      {
+        "categoryName": "Track and Field",
+        "categoryDescription": "Track and field events are popular at Caltech, and the college has a dedicated team for athletes."
+      },
+      {
+        "categoryName": "Tennis",
+        "categoryDescription": "The college tennis teams have a strong presence in regional tournaments."
+      }
+    ]
+  },
+  {
+    "collegeName": "Yale University",
+    "collegeRating": 4.7,
+    "researchPapers": 175,
+    "collegeImg": "https://s.hdnux.com/photos/01/32/65/06/23810464/5/1200x0.jpg",
+    "collegeAddress": "333 Elm Street, Heritageville, State",
+    "collegeDescription": "Yale University is an Ivy League institution renowned for its academic excellence and historic campus.",
+    "admissionDate": "November 1st - December 15th",
+    "admissionProcess": [
+      "Select the programs you wish to apply for.",
+      "Complete the Common Application or Coalition Application.",
+      "Submit your test scores, academic records, and supplemental materials.",
+      "Yale will conduct a holistic review of your application.",
+      "If you are a finalist, you may be invited for an interview.",
+      "The university will notify you of the admission decision by April 1st.",
+      "Congratulations on your acceptance to Yale!"
+    ],
+    "events": [
+      {
+        "eventName": "Spring Fling",
+        "eventDate": "April 15th - April 17th",
+        "eventDescription": "A festive celebration with music, games, and food to mark the arrival of spring."
+      },
+      {
+        "eventName": "Arts & Culture Festival",
+        "eventDate": "October 20th - October 22nd",
+        "eventDescription": "An annual arts and culture festival featuring performances, exhibitions, and workshops."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Neuroscience Advancements",
+        "researchDescription": "Yale researchers have made significant progress in neuroscience, uncovering new insights into brain functions."
+      },
+      {
+        "researchTitle": "Environmental Sustainability",
+        "researchDescription": "The college's environmental research team is dedicated to finding sustainable solutions to global challenges."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Ice Hockey",
+        "categoryDescription": "Yale has a competitive ice hockey team that competes in the ECAC Hockey league."
+      },
+      {
+        "categoryName": "Rowing",
+        "categoryDescription": "Rowing is a popular sport at Yale, with a successful crew team."
+      },
+      {
+        "categoryName": "Volleyball",
+        "categoryDescription": "Yale's volleyball teams participate in intercollegiate competitions and local tournaments."
+      }
+    ]
+  },
+  {
+    "collegeName": "Oxford University",
+    "collegeRating": 4.6,
+    "researchPapers": 205,
+    "collegeImg": "https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3hmb3JkJTIwdW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "collegeAddress": "444 High Street, Historica, State",
+    "collegeDescription": "Oxford University is a prestigious institution known for its centuries-old tradition of academic excellence.",
+    "admissionDate": "October 1st - October 31st",
+    "admissionProcess": [
+      "Select the course you wish to apply for.",
+      "Complete the UCAS application.",
+      "Submit your academic transcripts and personal statement.",
+      "The university will conduct a comprehensive review of your application.",
+      "If shortlisted, you may be invited for an interview.",
+      "The university will notify you of the admission decision by January 15th.",
+      "Congratulations on your acceptance to Oxford!"
+    ],
+    "events": [
+      {
+        "eventName": "Matriculation Ceremony",
+        "eventDate": "October 1st",
+        "eventDescription": "A formal ceremony to welcome new students and officially enroll them in the university."
+      },
+      {
+        "eventName": "May Day Celebrations",
+        "eventDate": "May 1st",
+        "eventDescription": "A grand celebration of May Day with traditional festivities, music, and dancing."
+      }
+    ],
+    "researchWorks": [
+      {
+        "researchTitle": "Quantum Computing Research",
+        "researchDescription": "Oxford researchers are at the forefront of quantum computing research, exploring the potential of quantum technologies."
+      },
+      {
+        "researchTitle": "Medical Discoveries",
+        "researchDescription": "The college's medical researchers have made groundbreaking discoveries in various areas of medicine."
+      }
+    ],
+    "sportsCategories": [
+      {
+        "categoryName": "Cricket",
+        "categoryDescription": "Oxford has a strong cricket team with a rich history in the sport."
+      },
+      {
+        "categoryName": "Equestrian",
+        "categoryDescription": "Equestrian activities are popular at Oxford, with students participating in riding competitions."
+      },
+      {
+        "categoryName": "Archery",
+        "categoryDescription": "The college archery club offers opportunities for students to develop their archery skills."
+      }
+    ]
+  }
 ]

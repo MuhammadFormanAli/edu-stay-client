@@ -7,7 +7,7 @@ const Admission = () => {
     
 
     useEffect(() => {
-        fetch(`http://localhost:5000/colleges`)
+        fetch(`https://edu-stay-server.vercel.app/colleges`)
             .then(res => res.json())
             .then(data => setColleges(data))
 

@@ -8,7 +8,7 @@ const MyCollege = () => {
     const { user } = useAuth()
     const userEmail = user?.email
     useEffect(() => {
-        fetch(`http://localhost:5000/applications?email=${userEmail}`)
+        fetch(`https://edu-stay-server.vercel.app/applications?email=${userEmail}`)
             .then(res => res.json())
             .then(data => setApplications(data))
     }, [userEmail])

@@ -17,7 +17,7 @@ const SocialLogin = () => {
             const loggedInUser = result.user;      //{ name, email, photo, role }
             const saveUser = { name: loggedInUser?.displayName, email: loggedInUser?.email, photo: loggedInUser?.photoURL }
             
-            fetch('http://localhost:5000/users', {
+            fetch('https://edu-stay-server.vercel.app/users', {
                             method: 'POST',
                             headers: {
                                 'content-type': 'application/json'
@@ -49,7 +49,7 @@ const SocialLogin = () => {
             const loggedInUser = result.user;      //{ name, email, photo, role }
             const saveUser = { name: loggedInUser?.displayName, email: loggedInUser?.email, photo: loggedInUser?.photoURL }
             
-            fetch('http://localhost:5000/users', {
+            fetch('https://edu-stay-server.vercel.app/users', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
